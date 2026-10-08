@@ -9,7 +9,7 @@ dateStyle:'full',
 
 const Header = () => {
   return (
-    <div className=" pt-4 bg-white container mx-auto px-4 mt-7 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+    <div className=" py-4 bg-white container mx-auto px-4 mt-7 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
       
       
       <div className="flex items-center gap-2.5">

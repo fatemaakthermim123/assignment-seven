@@ -13,8 +13,10 @@ const NavLinks = async() => {
   const navs:navs[]=data;
  ;
     return (
-        <div className='container mx-auto p-6  bg-white'>
+      <div className='border border-green-200 py-1'>
+        <div className='container mx-auto  '>
           <NavStyle navs={navs}/>
+        </div>
         </div>
     );
 };

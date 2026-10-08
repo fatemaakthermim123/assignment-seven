@@ -23,8 +23,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${NotoSerifBengali.className} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-sky-50">
-        <HeaderPage/>
+        
+        <div className="bg-white"><HeaderPage/>
         <NavLinksPage/>
+        </div>
         {children}</body>
     </html>
   );
