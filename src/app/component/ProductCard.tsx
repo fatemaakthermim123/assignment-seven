@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 interface PriceChange {
   dir: "up" | "down" ;
   pct: number;
@@ -37,7 +39,7 @@ const ProductCard = ({ product }: { product: Product }) => {
   const arrow = change.dir === "down" ? "▼" :  "▲" ;
 
   return (
-    
+    <Link href={`/ProductDetails/${product.id}`}>
     <div className="group w-full cursor-pointer rounded-3xl border border-gray-200
      bg-white p-4 transition-all duration-300 hover:-translate-y-1 hover:border-green-400
       hover:shadow-lg sm:p-5">
@@ -70,6 +72,7 @@ const ProductCard = ({ product }: { product: Product }) => {
         </span>
       </div>
     </div>
+    </Link>
   );
 };
 
