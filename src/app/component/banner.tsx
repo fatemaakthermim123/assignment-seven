@@ -8,7 +8,7 @@ const Banner = () => {
   });
 
   return (
-    <section className="container mx-auto mt-6 px-4">
+    <section className="container mx-auto mt-20 px-4">
       <div className="flex flex-col-reverse items-center justify-between gap-6 rounded- bg-white p-9 shadow-sm md:flex-row md:p-10">
         
         <div className="w-full md:w-3/5">
@@ -26,7 +26,7 @@ const Banner = () => {
           </p>
 
           <Link
-            href="#prices"
+            href="#all products"
             className="mt-6 inline-block rounded-xl bg-green-600 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-green-700 sm:text-base"
           >
             সব দাম দেখুন

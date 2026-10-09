@@ -1,4 +1,5 @@
 
+import Marquee from './Marquee';
 import NavStyle from './NavStyle';
  interface navs{
     slug:string,
@@ -13,10 +14,14 @@ const NavLinks = async() => {
   const navs:navs[]=data;
  ;
     return (
+      <div>
       <div className='border border-green-200 py-1'>
         <div className='container mx-auto  '>
           <NavStyle navs={navs}/>
+        </div> 
+        
         </div>
+        <Marquee></Marquee>
         </div>
     );
 };

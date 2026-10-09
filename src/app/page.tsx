@@ -1,6 +1,5 @@
-import Image from "next/image";
+
 import Banner from "./component/banner";
-import ProductList from "./component/ProductList";
 import SelectedProduct from "./component/SelectedProduct";
 import AllProducts from "./component/AllProducts";
 
@@ -41,9 +40,10 @@ export default async function HomePage () {
     .slice(0, 6);
   return (
     <div>
+      
      <Banner></Banner>
 
-     <div className="my-40">
+     <div className="my-40 ">
       <SelectedProduct
         id="prices"
         title="আজ দাম বেড়েছে"

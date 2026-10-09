@@ -25,7 +25,7 @@ const AllProducts =async () => {
   );
   const products: Products[] = await res.json();
     return (
-        <div className='container mx-auto mt-10'>
+        <div className='container mx-auto mt-10' id='all products'>
           <div className='mr-2 space-y-3 mb-4'>  <h1 className='font-bold text-2xl text-black'>সব পণ্য</h1>
             <p>মোট {products.length.toLocaleString("bn-BD")}টি পণ্য দেখানো হচ্ছে</p></div>
         <div className='grid grid-cols-3 gap-4 space-y-2.5'>
