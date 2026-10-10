@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 const date= new Date().toLocaleDateString("bn-BD",{
@@ -30,8 +31,8 @@ const Header = () => {
 
       
       <div className="flex gap-2">
-        <button className="btn btn-soft btn-sm md:btn-md">সাইন ইন</button>
-        <button className="btn btn-success btn-sm md:btn-md">সাইন আপ</button>
+        <Link href="/SignIn"><button className="btn btn-soft btn-sm md:btn-md">সাইন ইন</button></Link>
+        <Link href="/SignUp"><button className="btn bg-green-500 btn-sm md:btn-md" >সাইন আপ</button></Link>
       </div>
     </div>
   );

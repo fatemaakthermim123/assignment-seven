@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../../authentication/my-news-website"
+		}
+	],
+	"settings": {}
+}

@@ -4,6 +4,8 @@ import "./globals.css";
 import HeaderPage from "./component/Header";
 import NavLinksPage from "./component/NavLinks";
 import Footer from "./component/Footer";
+import { ToastContainer } from "react-toastify";
+import { Suspense } from "react";
 
 
 const  NotoSerifBengali  =  Noto_Serif_Bengali ({
@@ -26,9 +28,13 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="min-h-full flex flex-col bg-sky-50">
         
         <div className="bg-white"><HeaderPage/>
-        <NavLinksPage/>
+        <Suspense fallback={<div className="h-16"></div>}>
+          <NavLinksPage/>
+        </Suspense>
+        
         </div>
         {children}
+        <ToastContainer />
         <Footer></Footer>
         </body>
     </html>
