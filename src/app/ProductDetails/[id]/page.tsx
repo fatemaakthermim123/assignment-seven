@@ -1,5 +1,8 @@
+
+import { getSession } from "better-auth/api";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { redirect } from "next/navigation";
 
 interface Market {
     market: string;
@@ -39,8 +42,10 @@ const ProductDetails = async ({
 }) => {
     const { id } = await params;
 
+   
+
     const res = await fetch(
-        `https://api.api-store.workers.dev/api/bazardor/products/${id}`
+        `https://openapi.programming-hero.com/api/bazardor/products/${id}`
     );
     if (!res.ok) notFound();
     const p: Product = await res.json();

@@ -23,7 +23,7 @@ interface Products  {
 
 export default async function HomePage () {
     const res = await fetch(
-    "https://api.api-store.workers.dev/api/bazardor/products"
+    "https://openapi.programming-hero.com/api/bazardor/products"
   );
   const products: Products[] = await res.json();
 

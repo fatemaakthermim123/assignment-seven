@@ -1,6 +1,10 @@
+"use client"
+
+import { useSession } from '@/lib/auth-client';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import UserInfo from './UserInfo';
 
 const date= new Date().toLocaleDateString("bn-BD",{
 dateStyle:'full',
@@ -9,6 +13,8 @@ dateStyle:'full',
 
 
 const Header = () => {
+    const { data: session } = useSession();
+  const user = session?.user;
   return (
     <div className=" py-4 bg-white container mx-auto px-4 mt-7 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
       
@@ -29,11 +35,7 @@ const Header = () => {
         </div>
       </div>
 
-      
-      <div className="flex gap-2">
-        <Link href="/SignIn"><button className="btn btn-soft btn-sm md:btn-md">সাইন ইন</button></Link>
-        <Link href="/SignUp"><button className="btn bg-green-500 btn-sm md:btn-md" >সাইন আপ</button></Link>
-      </div>
+  <UserInfo></UserInfo>
     </div>
   );
 };

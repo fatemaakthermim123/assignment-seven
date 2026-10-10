@@ -19,6 +19,7 @@ const SignUpPage = () => {
       email: string;
       password: string;
       confirmPassword: string;
+      image:string;
     };
 
     if (user.password !== user.confirmPassword) {
@@ -95,6 +96,15 @@ const SignUpPage = () => {
             className={inputClass}
             required
           />
+                    <label className="mb-1 mt-4 block text-sm font-semibold text-gray-800">
+  ছবির URL
+</label>
+<input
+  name="image"
+  type="url"
+  placeholder="https://example.com/photo.jpg"
+  className={inputClass}
+/>
 
           <label className="mb-1 mt-4 block text-sm font-semibold text-gray-800">
             পাসওয়ার্ড
