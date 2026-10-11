@@ -35,6 +35,9 @@ const CategoryProducts = async ({ params }: { params: { categoryId: string } }) 
     if(!categoryProducts) {
         notFound()
     }
+    if (categoryProducts.length === 0) {
+  notFound();
+}
 
    const {categoryIcon,categoryNameBn}=categoryProducts[0];
 

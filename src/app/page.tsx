@@ -56,8 +56,9 @@ export default async function HomePage () {
         icon="📉"
         products={decreased}
       />
-
+        
       <AllProducts></AllProducts>
+      
       </div>
     
     </div>
