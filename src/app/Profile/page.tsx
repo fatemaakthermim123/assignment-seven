@@ -52,11 +52,7 @@ const ProfilePage = () => {
 
       <div className="mt-6 flex items-center gap-4 rounded-3xl bg-white p-5 shadow-sm">
         
-        <img
-          src={user.image || "https://api.dicebear.com/9.x/initials/svg?seed=" + user.name}
-          alt={user.name}
-          className="h-20 w-20 rounded-full object-cover"
-        />
+    
         <div>
           <p className="text-xl font-bold">{user.name}</p>
           <p className="text-sm text-gray-500">{user.email}</p>
@@ -74,14 +70,7 @@ const ProfilePage = () => {
           required
         />
 
-        <label className="mb-1 mt-4 block text-sm font-semibold">ছবির URL</label>
-        <input
-          name="image"
-          type="url"
-          defaultValue={user.image ?? ""}
-          placeholder="https://..."
-          className={inputClass}
-        />
+       
 
         <button
           type="submit"

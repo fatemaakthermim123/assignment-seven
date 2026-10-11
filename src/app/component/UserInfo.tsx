@@ -51,11 +51,7 @@ const UserInfo = () => {
         className="flex items-center gap-2 rounded-full bg-gray-50 py-1 pl-1 pr-3"
       >
         
-        <img
-          src={user.image || "https://api.dicebear.com/9.x/initials/svg?seed=" + user.name}
-          alt={user.name}
-          className="h-9 w-9 rounded-full object-cover"
-        />
+       
         <span className="text-sm font-medium">{user.name.split(" ")[0]}</span>
         <span className="text-xs">▾</span>
       </button>
